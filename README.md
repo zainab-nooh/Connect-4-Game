@@ -67,6 +67,8 @@ cd connect4-game
 **Course:** Software Engineering Bootcamp <br>
 **Institution:**  General Assembly <br>
 **Instructor:** Kristina VanBergen-DeSilva <br>
+* **Wireframe:**  [Link](https://excalidraw.com/#json=QQzF4YIG4oruDubTW0Zi8,hNpK21hG8PkdRkOmNU1peA)
+* **Trello:** [Board](https://trello.com/b/aCdCgi14/connect-4-game)
 
 # **Resources Used**
 *
