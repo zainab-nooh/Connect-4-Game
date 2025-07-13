@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Neue Machina;
+    src: url('../fonts/NeueMachina-Ultrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Stinger Fit Trial;
+    src: url(../fonts/StingerFitTrial-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+#main-content * {
+  font-family: 'Neue Machina', sans-serif;
+  
+}
+
+.text-part {
+    color: #2825b8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    font-size: 2.5vw;
+} 
+
+.play-btn {
+    background-color:#fd214a;
+    color: #fffefe;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    font-size: 1.8vw;
+}
+
+.play-btn a {
+ text-decoration: none;
+ color: #fffefe;   
+}
