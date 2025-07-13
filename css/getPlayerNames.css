@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Neue Machina;
+    src: url('../fonts/NeueMachina-Ultrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('../fonts/SourceSerif4_18pt-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.game-headline  h1{
+    font-family: 'Neue Machina', sans-serif;
+    color: #2825b8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 4vw;
+}
+
+#player-setup {
+    text-align: center;
+}
+
+#player-name-input {
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 1rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 0;
+    background-color: #f4ffbf;
+    color: black;
+    
+    
+}
+
+#player-name-input :hover {
+    
+}
+
+
+#nextbtn {
+    padding: 15px;
+    border: 0;
+    
+    font-family: 'Neue Machina', sans-serif;
+    background-color:#fd214a;
+    color: #fffefe;
+    border: 0;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+
+}

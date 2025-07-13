@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/footer.css" />
-    <script defer src="../app.js" ></script>
+    <link rel="stylesheet" href="../css/getPlayerNames.css" />
+    <script defer src="../js/getPlayers.js" ></script>
+    <script defer src="../js/app.js" ></script>
     <title>Connect4</title>
 </head>
 <body>
@@ -40,8 +42,20 @@
   </header>
 <!-- navigation bar -->
 <!-- Page Elements -->
-  
 
+<!-- top text part -->
+    <div class="game-headline">
+      <h1>Horray!</h1>
+      <h1>Enter Your names to start off</h1>  
+    </div> 
+  
+  
+  
+    <!-- Player name inputs section -->
+  <div id="player-setup">
+    <input  type="text" id="player-name-input" placeholder="Enter your name">
+    <button onclick="submitName()" id="nextbtn">Next</button>
+  </div>
 
 
 
