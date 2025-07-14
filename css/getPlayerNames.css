@@ -23,10 +23,13 @@
 }
 .players-display{
     text-align: center;
-
+    
 }
 .last-btn {
-    text-align: center;   
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 #start-game-btn {
     border: 0;
@@ -37,9 +40,14 @@
     padding: 10px;
     border-radius: 15px;
     font-size: 1.5rem;
-    margin: 10px;
     justify-content: center;
     align-items: center;
+    display: none;
+    margin: 20px;
+
+
+ 
+ 
 }
 .players-display h3, .player-info{
     text-align: center;
@@ -48,10 +56,12 @@
 .players-display h3 {
     font-size: 3vw;
     color: #db2e50;
+    padding-bottom: 2%;
 }
 .player-info {
-    font-size: 2.5vw;
+    font-size: 1.5em;
     color: #297ebc;
+    padding-bottom: 1%;
 }
 
 #player1-name, #player2-name {
@@ -60,10 +70,11 @@
 
 #player-setup {
     text-align: center;
+    margin-bottom: 1%;
 }
 
 #player-name-input {
-    font-family: 'Source Serif 4', sans-serif;
+    font-family: 'Neue Machina', sans-serif;
     font-size: 1rem;
     display: inline;
     justify-content: center;
@@ -72,8 +83,9 @@
     margin: 20px auto;
     border-radius: 15px;
     border: 0;
-    background-color: #f4ffbf;
+    background-color: #ffffd9;
     color: black;
+    margin: 0.5%;
     
     
 }

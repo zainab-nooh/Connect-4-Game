@@ -82,6 +82,13 @@ const startGame = () => {
         return
     }
 
+
+    localStorage.setItem('player1', player1)
+    localStorage.setItem('player2', player2)
+
+
+    window.location.href = "mainGamePage.html"
+
     document.getElementById('start-game-btn').style.display = "none"
     document.getElementById('game-status').style.display = "block"  
     
