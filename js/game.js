@@ -36,3 +36,8 @@ const resetGame = () => {
     document.getElementById('game-controls').style.display = 'none'
 
 }
+
+// Buttons and game stauts ends here
+
+// Board Section
+
