@@ -52,13 +52,35 @@
   
   
     <!-- Player name inputs section -->
-  <div id="player-setup">
-    <input  type="text" id="player-name-input" placeholder="Enter your name">
-    <button onclick="submitName()" id="nextbtn">Next</button>
+    <div class="container">
+      <!-- Players dispaly section-->
+      
+      <div class="players-display">
+        <h3>Players</h3>
+        <div class="player-info" id="player1-display">
+          Player 1: <span id = "player1-name">Not Added yet</span>
+          <span class="error"></span>
+        </div>
+        <div class="player-info" id="player2-display">
+          Player 2: <span id = "player2-name">Not Added yet</span>
+          <span class="error"></span>
+        </div>
+      </div>
+      <div id="player-setup">
+        <input  type="text" id="player-name-input" placeholder="Enter Player 1 name">
+        <button onclick="submitName()" id="next-btn">Add Player</button>
+      </div>
+      <div class="last-btn"> 
+      <button id="start-game-btn" onclick="startGame()" class="start-game-btn">Start Game</button>  
+      </div>
+      <div id="game-status" style="display: none;"></div>
+      
+      
+      <div class="game-controls" id="game-controls" style="display: none;">
+        <button class="turn-btn" onclick="switchTurn()">Next Turn</button>
+        <button class="turn-btn" onclick="resetGame()">Game Reset</button>
   </div>
-
-
-
+</div>
 
 
  <!-- footer section -->
