@@ -23,6 +23,21 @@ body {
   font-family: 'Neue Machina', sans-serif;
   
 }
+h1 {
+    font-size: 5vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+}
+#sentence {
+    font-size: 3vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .text-part {
     color: #2825b8;
