@@ -7,6 +7,9 @@
         [player2]: 0
     }
 
+    let gameOver = false
+
+
 
     document.getElementById('game-status').textContent = `${currentPlayer}'s turn`
     updateScoreBoard()
@@ -24,7 +27,7 @@
 
 
     function handleClick(index) {
-        if (board[index] !== '') {
+        if (board[index] !== '' || gameOver) {
             return
         }
 
@@ -40,114 +43,89 @@
         sqrEls[index].appendChild(img)
 
         
-        if (checkWin(color)) {
+        if (checkWinAtIndex(index, color)) {
             score[currentPlayer]++
             updateScoreBoard()
-            showMessage(`${currentPlayer} got a point!`)
+            showMessage(`${currentPlayer} scored a point!`)
             messageEl.style.backgroundColor = '#29bc87';
+
 
         }
 
-        switchTurn()
+        if (isBoardFull()) {
+            endGameWinner()
+        }else {
+            switchTurn()
+        }
+        
     }
 
+
+    
     const switchTurn = () => {
-    currentPlayer = (currentPlayer == player1) ? player2 : player1
-    document.getElementById("game-status").textContent = `${currentPlayer}'s turn`
-    if (currentPlayer === player2) {
-        gameStatus.style.backgroundColor = '#fd214a'
-    } else {
-        gameStatus.style.backgroundColor = '#297ebc'
+        currentPlayer = (currentPlayer === player1) ? player2 : player1
+        document.getElementById("game-status").textContent = `${currentPlayer}'s turn`
+        if (currentPlayer === player1) {
+            gameStatus.style.backgroundColor = '#297ebc'
+        } else {
+            gameStatus.style.backgroundColor = '#fd214a'
+        }
     }
-    }
-
-
+    
+    
     function showMessage(msg) {
         messageEl.textContent = msg
         messageEl.style.display = 'flex'
     } 
-
-
+    
+    
     function updateScoreBoard() {
         document.getElementById("score-1").textContent = `${player1}:  ${score[player1]}`
         document.getElementById("score-2").textContent = `${player2}: ${score[player2]}`
     }
+    
+    function checkWinAtIndex(index, color) {
+        return winningCombos.some(combo => 
+            combo.includes(index) && combo.every(i => board[i] === color)
+        )
+    }
 
-
+    function endGameWinner() {
+        if (score[player1] > score[player2]) {
+            showMessage(`Congratulations ${player1}! You Win! with ${score[player1]} points`)
+        } else if (score[player2] > score[player1]) {
+            showMessage(`Congratulations ${player2}! You Win! with ${score[player2]} points`)
+        }else {
+            showMessage(`Game over! It's a tie! Both have ${score[player1]} points`)
+        }
+    }
+    
     function resetBoard() {
         board = Array(42).fill('')
         sqrEls.forEach(sqrEl => sqrEl.innerHTML= '')
-        messageEl.textContent =''
+        messageEl.style.display = 'none'
         currentPlayer = player1
+        gameOver = false
         document.getElementById('game-status').textContent = `${currentPlayer}'s turn`
+
+
+        gameStatus.style.background = '#297ebc'
     }
-
-
-
+    
+    
+    
     function resetGame() {
         score[player1] = 0, 
         score[player2] = 0
-
+        
         updateScoreBoard()
         resetBoard()
         
     }
 
-
-function updateMessage() {
-    if (turn === player1 && winner  == false && tie === true) {
-        const gameStatus = document.getElementById('game-status')
-        messageEl.textContent = `${player1} got a point!`
-        gameStatus.style.backgroundColor = '#29bc87';
-
-    }else if (turn === player2 && winner === false && tie === true) {
-        messageEl.textContent = `${player2} got a ponit!`
-        gameStatus.style.backgroundColor = '#29bc87';
-    }else if (turn === player1 && winner === true) {
-        messageEl.textContent = `Congratulations ${player1}! You Win!`
-    }else if (turn === player2 && winner === true) {
-        messageEl.textContent = `Congratulations ${player2}! You Win!`
+    function isBoardFull() {
+        return board.every(cell => cell !== '')
     }
-}
-
-
-
-
-
-//Initializing state of the game
-// const init = () => {
-    // board = ['', '', '', '', '', '',
-    //          '', '', '', '', '', '',
-    //          '', '', '', '', '', '',
-    //          '', '', '', '', '', '',
-    //          '', '', '', '', '', '',
-    //          '', '', '', '', '', '',
-    //          '', '', '', '', '', '']
-
-//     turn = player1
-//     winner = false
-//     tie = false
-
-//     render()
-// }
-
-// init()
-
-
-// function render() {
-//     updateBoard()
-//     updateMessage()
-// }
-
-// function updateBoard() {
-//     board.forEach((cell, index) => {
-//         const sqrEl = sqrEls[index]
-
-//         sqrEl.textContent = cell
-//     });
-// }
-
-
 
 const winningCombos = [
     //Horizontal
@@ -222,35 +200,3 @@ const winningCombos = [
     [18,11,4,3]    
     
 ]
-
-    
-    function checkWin(color) {
-      return winningCombos.some(combo => 
-        combo.every(index => board[index] === color)
-      )};
-
-
-//     const resetGame = () => {
-//         clearErrors() 
-//         player1 = ''
-//         player2 = ''
-//         currentPlayer = ''
-
-//     //Clearing Player display
-//     document.getElementById('player1-name').textContent = "Not added yet"
-//     document.getElementById('player2-name').textContent = "Not added yet"
-//     document.getElementById('player1-display').classList.remove('filled')
-//     document.getElementById('player2-display').classList.remove('filled')
-
-//     //clearing inputs
-//     document.getElementById('player-name-input').value = ''
-//     document.getElementById('player-name-input').Placeholder = "Enter Player 1 name"
-//     document.getElementById('next-btn').textContent = "Add player"
-
-
-//     document.getElementById('player-setup').style.display = 'block'
-//     document.getElementById('start-game-btn').style.display = 'none'
-//     document.getElementById('game-status').style.display = 'none'
-//     document.getElementById('game-controls').style.display = 'none'
-
-// }
