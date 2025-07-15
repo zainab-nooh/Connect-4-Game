@@ -8,6 +8,16 @@
     border-radius: 15px;
     font-size: 1rem;
 }
+.turn-btn a {
+    border: 0;
+    font-family: 'Neue Machina', sans-serif;
+    color: #fffefe;
+    border: 0;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    
+}
 
 #stat {
     display: flex;
@@ -71,9 +81,16 @@ body {
     align-items: center;
     text-align: center;
     font-family: 'Neue Machina', sans-serif;
-    padding: 2%;
+    padding: 20px;
     font-size: 2.5rem;
-}
+    border: 0;
+    background-color:#29bc87;
+    color: #fffefe;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    width: 30%;
+    margin: 20px auto;
+} 
 .scores-section  {
     display: flex;
     align-items: center;
@@ -140,6 +157,11 @@ body {
   text-align: center;
   gap: -2px;
 
+}
+
+.sqr:hover {
+    background-color: #f5e6e6;
+    transform: scale(1.05);
 }
 
 
