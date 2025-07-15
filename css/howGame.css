@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('../fonts/SourceSerif4_18pt-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Neue Machina;
+    src: url('../fonts/NeueMachina-Ultrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.guide-headline * {
+  font-family: 'Neue Machina', sans-serif;
+    color: #2825b8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 4vw;
+}
+
+.guidline-section * {
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.space-btw-guide {
+  margin: 3%;  
+  padding-left: 5%;
+}
+
+.headline {
+    font-family: 'Neue Machina', sans-serif;
+    padding-left: 5%;
+    font-size: 3vw;
+    padding: 1%;
+    color:#2825b8
+}
+
+.content {
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    color: #103957;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    line-height: 1.6;
+}
+.content strong {
+    font-weight: bold;
+    display: inline;
+}
