@@ -41,7 +41,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 10px auto;
 
 }
 
@@ -67,6 +67,7 @@
 body {
     
     font-family: 'Neue Machina', sans-serif;
+    margin: 0;
 }
 
 body {
@@ -90,7 +91,7 @@ body {
     border-radius: 20px;
     font-size: 1.8rem;
     width: 30%;
-    margin: 20px auto;
+    margin: 10px auto;
 } 
 .scores-section  {
     display: flex;
@@ -123,6 +124,7 @@ body {
 
 #score-1 {
     background-color: #2825b8;
+
 }
 
 #score-2 {
@@ -135,6 +137,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* margin-top: 20px;
+    gap: 30px; */
+
+
 }
 
 .board {
@@ -143,6 +149,7 @@ body {
   justify-content:center;
   align-items: center;
   width:65% ;
+
   
 }
 

@@ -31,6 +31,9 @@
             return
         }
 
+
+        hideMessage()
+
         const color = (currentPlayer === player1) ? 'R' : 'B'
         board[index] = color
 
@@ -78,6 +81,10 @@
         messageEl.style.display = 'flex'
     } 
     
+
+    function hideMessage() {
+        messageEl.style.display = 'none'
+    }
     
     function updateScoreBoard() {
         document.getElementById("score-1").textContent = `${player1}:  ${score[player1]}`
@@ -103,7 +110,11 @@
     function resetBoard() {
         board = Array(42).fill('')
         sqrEls.forEach(sqrEl => sqrEl.innerHTML= '')
-        messageEl.style.display = 'none'
+        
+        score[player1] = 0, 
+        score[player2] = 0
+        updateScoreBoard()
+        hideMessage()
         currentPlayer = player1
         gameOver = false
         document.getElementById('game-status').textContent = `${currentPlayer}'s turn`

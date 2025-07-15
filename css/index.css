@@ -12,7 +12,12 @@
     font-style: normal;
 }
 
-
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
 
 #main-content * {
   font-family: 'Neue Machina', sans-serif;

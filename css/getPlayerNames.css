@@ -12,6 +12,14 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 .game-headline  h1{
     font-family: 'Neue Machina', sans-serif;
     color: #2825b8;
