@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina-Ultrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .turn-btn {
     border: 0;
     font-family: 'Neue Machina', sans-serif;
@@ -22,9 +29,25 @@
 }
 
 #stat {
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
+}
+
+.top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 0 20px;
+    padding-top: 1%;
+    position: relative;
+    width: 100%;
+    
 }
 
 #game-status {
@@ -36,12 +59,12 @@
     padding: 20px;
     border-radius: 20px;
     font-size: 2rem;
-    width: 40%;
-    display: block;
+    width: 50%;
+    /* display: block; */
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    margin: 0;
 
 }
 
@@ -93,6 +116,8 @@ body {
     width: 30%;
     margin: 10px auto;
 } 
+
+
 .scores-section  {
     display: flex;
     align-items: center;
@@ -170,6 +195,66 @@ body {
     transform: scale(1.05);
 }
 
+
+/* 
+.music-controls {
+    position:fixed;
+    right: 20px; 
+} */
+
+/* .music-controls {
+    position: relative; /* Keep it relative to the top-section */
+    /* margin-left: 20px; Add space between music button and game status */
+/* } */ 
+
+   /* .music-controls {
+        margin-left: 0; /* Reset margin for music controls */
+        /* text-align: center; Center text for music controls */
+    /* } */ 
+
+    .music-controls {
+        position: absolute;
+        top: 24%;
+        right:2%;
+        
+    }
+
+
+
+
+
+.turn-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0 ;
+    border-radius: 50%;
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    line-height: 1;
+    color: #fffefe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fec3d1;
+}
+
+        .turn-music:hover {
+            background-color: #f2c3fe;
+            transform: scale(1.05);
+        }
+
+        .turn-music.muted {
+            background-color: #666;
+        }
+
+        .turn-music.muted:hover {
+            background-color: #555;
+        }
 
 
 

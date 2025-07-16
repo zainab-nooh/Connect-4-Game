@@ -25,6 +25,11 @@
     <title>Connect 4</title>
 </head>
 <body>
+  <!-- Adding audio -->
+  <audio id="backgroundMusic" loop>
+    <source src="../Backgroung-music/Hidden in Havana.mp3" type="audio/mpeg">
+    <source src="../Backgroung-music/Hidden in Havana.mp3" type="audio/mp3">
+  </audio>
 
     <!-- navigation bar -->
     <header>
@@ -55,9 +60,15 @@
   </header>
 <!-- navigation bar -->
 <!-- main part section -->
+
+<div class="top-section">
   <div id="stat">
       <h1 id="game-status"></h1>
     </div>
+    </div>
+
+    
+
     <!-- Board Section -->
      <h2 id="turnMessage" style="display: none;">Message</h2>
      
@@ -124,7 +135,13 @@
         <button class="turn-btn" onclick="resetGame()"><a href="../pages/gamePage.html">Game Reset</a></button>
     </div>
 
-
+        <!-- Music Controls -->
+    <div class="music-controls">
+      <button class="turn-music" id="musicToggle">
+        <span id="musicIcon">🎵</span>
+        <!-- <span id="musicText">Enable Music</span> -->
+      </button>
+    </div>
 
 
 

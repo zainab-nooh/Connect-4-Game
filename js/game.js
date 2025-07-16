@@ -211,3 +211,35 @@ const winningCombos = [
     [18,11,4,3]    
     
 ]
+
+
+const audio = document.getElementById('backgroundMusic')
+const musicToggle = document.getElementById('musicToggle')
+const musicIcon = document.getElementById('musicIcon')
+const musicText = document.getElementById('musicText')
+let musicEnabled = false
+
+
+
+ musicToggle.addEventListener('click', () => {
+            console.log('Music toggle clicked, current state:', musicEnabled);
+            
+            if (musicEnabled) {
+                audio.pause();
+                musicIcon.textContent = '🎵';
+                musicToggle.classList.add('muted');
+                musicEnabled = false;
+                console.log('Music disabled');
+            } else {
+                audio.play().then(() => {
+                    console.log('Audio playing successfully');
+                    musicIcon.textContent = '🔇';                    
+                    musicToggle.classList.remove('muted');
+                    musicEnabled = true;
+                 })
+                //  .catch(error => {
+                //     console.error('Audio play failed:', error);
+                //     alert('Audio could not be played. Please check if the file exists and is accessible.');
+                // });
+            }
+        });
