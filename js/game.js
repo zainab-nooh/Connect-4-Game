@@ -237,9 +237,5 @@ let musicEnabled = false
                     musicToggle.classList.remove('muted');
                     musicEnabled = true;
                  })
-                //  .catch(error => {
-                //     console.error('Audio play failed:', error);
-                //     alert('Audio could not be played. Please check if the file exists and is accessible.');
-                // });
             }
         });
