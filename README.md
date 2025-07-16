@@ -2,7 +2,9 @@
 
 
 # **Description**
-Connect 4 is a classic two-player connection game where players take turns dropping colored discs into a vertically suspended grid.
+Connect 4 is a two-player connection game where players take turns dropping colored discs into the board.
+
+[Connect4](https://zainab-memory-game.surge.sh/)
 
 
 
@@ -38,20 +40,25 @@ cd connect4-game
 
 # **Gameplay Instructions**
 ## **1. Starting the Game**
-* The game begins with Player 1 (Green) taking the first turn
+* The game begins with Player 1 (Blue) taking the first turn
 * Current player is indicated on the game interface
 
 ## **2. Make a Move**
-* Click on any column to drop your disc
-* Discs fall to the lowest available position in that column
+* Click any empty cell on the board to place your disc
+* Once placed, disc stay in that exact position
 * Players alternate turns automatically
 
-## **3. Winning**
-* Connect 4 of your discs horizontally, vertically, or diagonally
-* The game will automatically detect and announce the winner
-* Winner's score is incremented
+## **3. Scoring**
+* **Horizontal** (across) = 1 point
+* **Vertical** (up/down) = 1 point
+* **Diognal** (corner to corner) = 1 point
 
-## **4. Reset**
+## **4. Winning**
+* **Game continues** until the board is full
+* **Winner:** Player with the most points(most Connect 4 patterns)
+* **Tie:** If both players have equal points
+
+## **5. Reset**
 * Use the "Reset Game" button to clear the board and start over
 * Scores are maintained unless specifically reset
 
@@ -59,6 +66,7 @@ cd connect4-game
 - ✅ Two-player local multiplayer
 - ✅ Win detection (horizontal, vertical, diagonal)
 - ✅ Score tracking system
+- ✅ Board reset functionality
 - ✅ Game reset functionality
 - ✅ Responsive design
 
@@ -69,9 +77,9 @@ cd connect4-game
 **Instructor:** Kristina VanBergen-DeSilva <br>
 * **Wireframe:**  [Link](https://excalidraw.com/#json=QQzF4YIG4oruDubTW0Zi8,hNpK21hG8PkdRkOmNU1peA)
 * **Trello:** [Board](https://trello.com/b/aCdCgi14/connect-4-game)
+* **Design:** [Page Design](https://drive.google.com/file/d/1WxYj3kdFG_cM71xS6KfuyJYrZMAGWLVh/view?usp=sharing)
 
 # **Resources Used**
-*
-*
-*
-
+* **Fonts Used** [Neue Machina](https://befonts.com/neue-machina-v2-0-font.html), [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4) 
+* **Music** [Hidden in Havana](https://www.epidemicsound.com/track/byuoe94tom/)
+* **Articles and resources** [Display errors without alerts](https://www.geeksforgeeks.org/javascript/how-to-display-error-without-alert-box-using-javascript/), [Save data in local storage](https://www.geeksforgeeks.org/javascript/how-to-save-data-in-local-storage-in-javascript/), 
