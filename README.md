@@ -35,10 +35,10 @@ cd connect4-game
 * Open index.html in your browser
 ### 3. Start Palying
 
-* Player 1 (Green) goes first
-* Click on any column to drop your disc
+* Player 1 (Blue) goes first
+* Click any empty cell on the board to place your disc
 
-# **Gameplay Instructions**
+# **Game play Instructions**
 ## **1. Starting the Game**
 * The game begins with Player 1 (Blue) taking the first turn
 * Current player is indicated on the game interface
