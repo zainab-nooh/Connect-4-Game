@@ -94,13 +94,18 @@ body {
 }
 
 body {
-  background-color: gainsboro;
+  background-color: white;
   font-family: system-ui, sans-serif;
   margin: 0;
 }
 
+.message-wrapper {
+    position: relative;
+    height: 0;
+}
 
-#turnMessage {
+
+/* #turnMessage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,10 +120,25 @@ body {
     font-size: 1.8rem;
     width: 30%;
     margin: 10px auto;
+}  */
+
+#turnMessage {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #29bc87;
+  color: #fff;
+  font-family: 'Neue Machina', sans-serif;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: none;
+  z-index: 10;
 } 
 
 
-.scores-section  {
+/* .scores-section  {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +165,35 @@ body {
     color: #fffefe;
 
     
+} */
+
+.scores-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    margin: 1px auto; /* Center the section with auto margins */
+    width: 100%; /* Use full width */
+    font-size: 1.3rem; /* Adjust font size as needed */
+    padding: 0 20px; /* Optional: Add padding for better spacing */
 }
+
+.score {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 50%;
+    font-family: 'Neue Machina', sans-serif;
+    padding: 20px;
+    gap: 20px;
+    width: 140px;
+    height: 140px;
+    line-height: 1;
+    color: #fffefe;
+}
+
+
 
 #score-1 {
     background-color: #2825b8;
@@ -171,9 +219,9 @@ body {
   flex-wrap:wrap ;
   justify-content:center;
   align-items: center;
-  width:65% ;
-
-  
+  width:65%;
+  max-width: 500px;
+  margin: 0 auto; 
 }
 
 .sqr {
@@ -215,7 +263,7 @@ body {
     .music-controls {
         position: absolute;
         top: 24%;
-        right:2%;
+        right:3%;
         
     }
 
