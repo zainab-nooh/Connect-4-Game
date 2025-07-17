@@ -70,6 +70,25 @@ cd connect4-game
 - ✅ Game reset functionality
 - ✅ Responsive design
 
+# **Code that I'm Proud of**
+### The code that worked on defining the winning situations.
+<img src='./images/readme-pic/Screenshot (85).png' width = '200px'>
+<img src='./images/readme-pic/Screenshot (86).png' width = '200px'>
+<img src='./images/readme-pic/Screenshot (87).png' width = '200px'>
+
+
+
+# **The most challenging code**
+### Handling Clicks 
+<img src='./images/readme-pic/Screenshot (88).png' width = '300px'>
+
+
+# **Intresting code**
+### Saving usernames and displaying them 
+<img src='./images/readme-pic/Screenshot (89).png' width = '400px'>
+<img src='./images/readme-pic/Screenshot (90).png' width = '400px'>
+
+
 # **Credits**
  **Developer:** Zainab Nooh <br>
 **Course:** Software Engineering Bootcamp <br>
