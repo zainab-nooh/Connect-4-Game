@@ -4,7 +4,7 @@
 # **Description**
 Connect 4 is a two-player connection game where players take turns dropping colored discs into the board.
 
-[Connect4](https://zainab-memory-game.surge.sh/)
+[Connect4](https://connect-4-q48h.onrender.com)
 
 
 
