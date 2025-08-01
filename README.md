@@ -2,7 +2,7 @@
 
 
 # **Description**
-Connect 4 is a two-player connection game where players take turns dropping colored discs into the board.
+Connect 4 is a strategic two-player connection game where **Player 1 (Blue)** and **Player 2 (Red)** compete to score the most points by creating Connect 4 patterns. Unlike the traditional version where the first Connect 4 wins, this enhanced browser-based implementation continues gameplay until the board is completely full, allowing players to score multiple points throughout the game. The objective is to create as many horizontal, vertical, and diagonal Connect 4 patterns as possible to achieve the highest score.
 
 <br>
 
@@ -116,7 +116,7 @@ cd connect4-game
 # **Resources Used**
 * **Fonts Used** [Neue Machina](https://befonts.com/neue-machina-v2-0-font.html), [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4) 
 * **Music** [Hidden in Havana](https://www.epidemicsound.com/track/byuoe94tom/)
-* **Articles and resources** [Display errors without alerts](https://www.geeksforgeeks.org/javascript/how-to-display-error-without-alert-box-using-javascript/), [Save data in local storage](https://www.geeksforgeeks.org/javascript/how-to-save-data-in-local-storage-in-javascript/), 
+* **Articles and resources** [Display errors without alerts](https://www.geeksforgeeks.org/javascript/how-to-display-error-without-alert-box-using-javascript/), [Save data in local storage](https://www.geeksforgeeks.org/javascript/how-to-save-data-in-local-storage-in-javascript/)
 
 <br>
 
