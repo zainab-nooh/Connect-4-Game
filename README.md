@@ -4,8 +4,11 @@
 # **Description**
 Connect 4 is a two-player connection game where players take turns dropping colored discs into the board.
 
-[Connect4](https://connect-4-q48h.onrender.com)
 
+
+#  **Demo**
+
+ Visit the [live demo](https://connect-4-q48h.onrender.com) to see Connect 4 in action
 
 
 
@@ -72,15 +75,15 @@ cd connect4-game
 
 # **Code that I'm Proud of**
 ### The code that worked on defining the winning situations.
-<img src='./images/readme-pic/Screenshot (85).png' width = '200px'>
-<img src='./images/readme-pic/Screenshot (86).png' width = '200px'>
-<img src='./images/readme-pic/Screenshot (87).png' width = '200px'>
+<img src='./images/readme-pic/Screenshot (85).png' height = '250px'>
+<img src='./images/readme-pic/Screenshot (86).png' height = '250px'>
+<img src='./images/readme-pic/Screenshot (87).png' height = '250px'>
 
 
 
 # **The most challenging code**
 ### Handling Clicks 
-<img src='./images/readme-pic/Screenshot (88).png' width = '300px'>
+<img src='./images/readme-pic/Screenshot (88).png' width = '400px'>
 
 
 # **Intresting code**
@@ -102,3 +105,11 @@ cd connect4-game
 * **Fonts Used** [Neue Machina](https://befonts.com/neue-machina-v2-0-font.html), [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4) 
 * **Music** [Hidden in Havana](https://www.epidemicsound.com/track/byuoe94tom/)
 * **Articles and resources** [Display errors without alerts](https://www.geeksforgeeks.org/javascript/how-to-display-error-without-alert-box-using-javascript/), [Save data in local storage](https://www.geeksforgeeks.org/javascript/how-to-save-data-in-local-storage-in-javascript/), 
+
+
+
+#  **Connect With Me**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zainab-nooh)
+
+
