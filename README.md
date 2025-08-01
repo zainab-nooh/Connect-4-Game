@@ -4,13 +4,13 @@
 # **Description**
 Connect 4 is a two-player connection game where players take turns dropping colored discs into the board.
 
-
+<br>
 
 #  **Demo**
 
  Visit the [live demo](https://connect-4-q48h.onrender.com) to see Connect 4 in action
 
-
+<br>
 
 # **Technologies Used**
 
@@ -18,7 +18,7 @@ Connect 4 is a two-player connection game where players take turns dropping colo
 * **CSS-** Styling, animations, and responsive design
 * **JavaScript-** Game logic, event handeling, and DOM manipulation
 
-
+<br>
 
 # **How to Get Started**
 ## Prerequisites 
@@ -40,6 +40,8 @@ cd connect4-game
 
 * Player 1 (Blue) goes first
 * Click any empty cell on the board to place your disc
+
+<br>
 
 # **Game play Instructions**
 ## **1. Starting the Game**
@@ -65,6 +67,9 @@ cd connect4-game
 * Use the "Reset Game" button to clear the board and start over
 * Scores are maintained unless specifically reset
 
+
+<br>
+
 # **Features**
 - ✅ Two-player local multiplayer
 - ✅ Win detection (horizontal, vertical, diagonal)
@@ -73,24 +78,29 @@ cd connect4-game
 - ✅ Game reset functionality
 - ✅ Responsive design
 
+<br>
+
 # **Code that I'm Proud of**
 ### The code that worked on defining the winning situations.
-<img src='./images/readme-pic/Screenshot (85).png' height = '250px'>
-<img src='./images/readme-pic/Screenshot (86).png' height = '250px'>
-<img src='./images/readme-pic/Screenshot (87).png' height = '250px'>
+<img src='./images/readme-pic/Screenshot (85).png' height = '300px'>
+<img src='./images/readme-pic/Screenshot (86).png' height = '300px'>
+<img src='./images/readme-pic/Screenshot (87).png' height = '300px'>
 
-
+<br>
 
 # **The most challenging code**
 ### Handling Clicks 
-<img src='./images/readme-pic/Screenshot (88).png' width = '400px'>
+<img src='./images/readme-pic/Screenshot (88).png' height = '400px'>
 
+
+<br>
 
 # **Intresting code**
 ### Saving usernames and displaying them 
-<img src='./images/readme-pic/Screenshot (89).png' width = '400px'>
-<img src='./images/readme-pic/Screenshot (90).png' width = '400px'>
+<img src='./images/readme-pic/Screenshot (89).png' width = '450px'>
+<img src='./images/readme-pic/Screenshot (90).png' width = '450px'>
 
+<br>
 
 # **Credits**
  **Developer:** Zainab Nooh <br>
@@ -101,12 +111,14 @@ cd connect4-game
 * **Trello:** [Board](https://trello.com/b/aCdCgi14/connect-4-game)
 * **Design:** [Page Design](https://drive.google.com/file/d/1WxYj3kdFG_cM71xS6KfuyJYrZMAGWLVh/view?usp=sharing)
 
+<br>
+
 # **Resources Used**
 * **Fonts Used** [Neue Machina](https://befonts.com/neue-machina-v2-0-font.html), [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4) 
 * **Music** [Hidden in Havana](https://www.epidemicsound.com/track/byuoe94tom/)
 * **Articles and resources** [Display errors without alerts](https://www.geeksforgeeks.org/javascript/how-to-display-error-without-alert-box-using-javascript/), [Save data in local storage](https://www.geeksforgeeks.org/javascript/how-to-save-data-in-local-storage-in-javascript/), 
 
-
+<br>
 
 #  **Connect With Me**
 
